@@ -1,3 +1,4 @@
+// ---------Nav Bar----------
 const sidemen = document.getElementById('togglebar');
 function openMenu() {
     sidemen.style.right = "0px";
