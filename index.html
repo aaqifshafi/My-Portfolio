@@ -216,10 +216,10 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Email-id" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="email" name="Email" placeholder="Email-id" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn-2">Submit</button>
                     </form>
                 </div>
@@ -232,6 +232,17 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script type="text/javascript " src="js/script.js"></script>
     <script src="js/circle-progress.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxDBIwgOAFpphhz7EU0Cf3Rb_kXEavQkkMR_538So0kxoK11VmbNsigqOnWdpQTIuAFA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>
