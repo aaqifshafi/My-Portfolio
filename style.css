@@ -468,16 +468,47 @@ nav .fa-solid{
 }
 
 @media (max-width: 600px) {
-  .header-text{
-  margin-top: 20%;
-  font-size:16px ;
+  .section{
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap:nowrap;
+    /* flex-direction: column-reverse; */
   }
-  .header-image{
-    /* margin-top: -185%; */
-    /* margin-left: 50%; */
+  .row{
+    margin-block: -70%;
+    display: block;
+  }
+  .section .header-text{
+    flex-basis: 30%;
+    margin-top: 10%;
+    font-size:15px ;
+    /* padding-block: 30%; ; */
+  }
+  .section .header-image{
+    margin-right: -20%;
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .header-text h1{
     font-size: 30px;
+  }
+  .btn.btn-1{
+
+  }
+  #about{
+    margin-top: -50%;
+  }
+  .about-col-2{
+    display: contents;
+  }
+  .about-col-1 img{
+    display: none;
+    /* width: 27%; */
+    /* position: absolute; */
+    /* left: 250px; */
   }
   
   .skills{
@@ -513,4 +544,22 @@ nav .fa-solid{
     top: 25px;
     corsor:pointer;
   }
-} 
+
+  #services{
+    margin-block: 40%;
+  }
+.mh-professional-skills{
+margin-block: 40px;
+margin-bottom: 150%;
+}
+.pr-skill-name{
+  font-size: 13px;
+}
+.social-icons .fa-brands, .fab{
+  width: 25px;
+}
+.copyright{
+  margin-top:300px ;
+}
+}
+
