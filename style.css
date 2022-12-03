@@ -460,6 +460,11 @@ form .btn-2{
   color: #6ECCAF;
   text-decoration: none;
 }
+#msg{
+  color: #6ECCAF;
+  margin-top: -40px;
+  display: block;
+}
 
 /* -------Responsiveness--------- */
 /* ////........Media Query........//// */
@@ -562,4 +567,5 @@ margin-bottom: 150%;
   margin-top:300px ;
 }
 }
+
 
