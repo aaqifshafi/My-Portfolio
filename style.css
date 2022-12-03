@@ -468,6 +468,9 @@ form .btn-2{
 
 /* -------Responsiveness--------- */
 /* ////........Media Query........//// */
+#msg{
+  margin-top: 15px;
+}
 nav .fa-solid{
   display: none;
 }
