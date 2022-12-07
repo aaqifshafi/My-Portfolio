@@ -57,7 +57,7 @@ nav{
     width: 100%;
  }
 .header-text{
-   margin-top: 5%;
+   margin: 5%;
 }
  .header-text p{
     color:white;
@@ -106,6 +106,7 @@ font-size: 19px;
  }
  .about-col-1{
    flex-basis: 35%;
+   padding: 15px;
  }
  .about-col-2{
    flex-basis: 60%;
@@ -115,8 +116,9 @@ font-size: 19px;
    line-height: 1.7em;
  }
  .about-col-1 img{
-   border-radius: 15px;
-   width: 120%;
+   border-radius: 100%;
+   width: 100%;
+   margin:5%
  }
  .about-col-2 h1{
    color: #6ECCAF;
