@@ -1,174 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-   
+body {
+  background-color: black;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-.container{
-    background-color: black;
-    padding: 10px 10%;
+.container {
+  /* background-color: black; */
+
+  padding: 10px 10%;
 }
 
-#header{
-    width: 100%;
-    height: 100vh;
-    
+#header {
+  width: 100%;
+  height: 100vh;
 }
-nav{
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
- }
- .logo{
-    width: 250px;
-
- }
- nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
- }
- nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    position: relative;
- }
- nav ul li a::after{
-    position: absolute;
-    content: '';
-    width:0;
-    background: #6ECCAF;
-    height: 3px;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
- }
- nav ul li a:hover::after{
-    width: 100%;
- }
-.header-text{
-   margin-top: 5%;
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
- .header-text p{
-    color:white;
-    margin-top: 20%;
-    font-size: 30px;
- }
- .header-text h1{
-   color:white;
-   font-size: 60px;
- }
- .header-text h3{
+.logo {
+  width: 250px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  background: #6eccaf;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.header-text {
+  margin-top: 5%;
+}
+.header-text p {
+  color: white;
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1 {
+  color: white;
+  font-size: 60px;
+}
+.header-text h3 {
   color: white;
   margin-top: 10px;
-
- }
- .header-text span{
-  color: #6ECCAF;
- }
- .header-image{
-   display: flex;
-   justify-content: right;
-   flex-wrap: wrap;
- }
- .section{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
- }
- .btn-1{
-  display:inline-block;
+}
+.header-text span {
+  color: #6eccaf;
+}
+.header-image {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.btn-1 {
+  display: inline-block;
   font-size: 18px;
-  color:white;  
- }
+  color: white;
+}
 
 /* --------About------ */
-#about{
-padding: 80px 0;
-color: white;
-text-align: justify;
-font-size: 19px;
+#about {
+  padding: 80px 0;
+  color: white;
+  text-align: justify;
+  font-size: 19px;
 }
-.row{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
- }
- .about-col-1{
-   flex-basis: 35%;
- }
- .about-col-2{
-   flex-basis: 60%;
-   padding: 15px;
-   width: 15px;
-   text-align: justify;
-   line-height: 1.7em;
- }
- .about-col-1 img{
-   border-radius: 15px;
-   width: 120%;
- }
- .about-col-2 h1{
-   color: #6ECCAF;
- }
- .sub-title{
-   font-size: 50px;
-   color: #6ECCAF;
-   line-height: 2em;
- }
- .keys{
-  color: #6ECCAF;
- }
- /* Services------ */
- #services{
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-2 {
+  flex-basis: 60%;
+  padding: 15px;
+  width: 15px;
+  text-align: justify;
+  line-height: 1.7em;
+}
+.about-col-1 img {
+  border-radius: 15px;
+  width: 120%;
+}
+.about-col-2 h1 {
+  color: #6eccaf;
+}
+.sub-title {
+  font-size: 50px;
+  color: #6eccaf;
+  line-height: 2em;
+}
+.keys {
+  color: #6eccaf;
+}
+/* Services------ */
+#services {
   color: white;
   padding: 30px 0;
 }
-.list{
+.list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-bottom: 50px;
 }
-.list div{
+.list div {
   background-color: #3c3939;
   padding: 40px;
   font-size: 13px;
   border-radius: 10px;
   font-weight: 300;
   text-align: center;
-  transition: 0.5s,transform 0.5s;
+  transition: 0.5s, transform 0.5s;
 }
-.list div i{
-font-size: 50px;
-margin-bottom: 30px;
-
+.list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
 }
-.list div h2{
-  margin-bottom:15px ;
+.list div h2 {
+  margin-bottom: 15px;
   font-weight: 500;
-  font-size: 30px ;
+  font-size: 30px;
 }
 
-.list div:hover{
-  background: #6ECCAF;
+.list div:hover {
+  background: #6eccaf;
   transform: translateY(-10px);
-
 }
 
 /*-------------- Technical Skills------------- */
 #my-skills {
-
   /* background: #fff; */
   padding: 80px 0;
   color: white;
@@ -176,13 +171,13 @@ margin-bottom: 30px;
   /* transform: translate(-50%, -50%); */
   font-size: 19px;
 }
-.skills-col-1{
+.skills-col-1 {
   flex-basis: 50%;
 }
-.skills-col-2{
+.skills-col-2 {
   flex-basis: 45%;
   font-size: 20px;
-  color:white;
+  color: white;
 }
 
 .skills-bar {
@@ -200,7 +195,7 @@ margin-bottom: 30px;
 
 .skills-bar .bar .info {
   margin-bottom: 8px;
-  color:white;
+  color: white;
 }
 
 .skills-bar .bar .progress-line {
@@ -216,12 +211,12 @@ margin-bottom: 30px;
 
 .bar .progress-line span {
   position: absolute;
-  background: #6ECCAF;
+  background: #6eccaf;
   height: 100%;
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  text-transfrom : uppercase;
+  text-transfrom: uppercase;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
@@ -273,7 +268,6 @@ margin-bottom: 30px;
   border-radius: 3px;
 }
 
-
 .progress-line .html::after {
   content: "80%";
 }
@@ -291,104 +285,102 @@ margin-bottom: 30px;
 }
 
 /* -------------Professional Skill---------------- */
-.mh-skills .mh-professional-skill{
-padding-right: 60px;
-color: white;  
+.mh-skills .mh-professional-skill {
+  padding-right: 60px;
+  color: white;
 }
-.technical-skills h3{
+.technical-skills h3 {
   font-size: 30px;
   line-height: 40px;
   text-align: center;
-  color: #6ECCAF;  
+  color: #6eccaf;
   margin-bottom: 60px;
-  }
-mh-professional-skills{
+}
+mh-professional-skills {
   padding-left: 20%;
 }
-.mh-professional-skills h3{
+.mh-professional-skills h3 {
   font-size: 30px;
   line-height: 40px;
   text-align: center;
-  color: #6ECCAF;  
+  color: #6eccaf;
   margin-bottom: 60px;
 }
 
-
-.mh-professional-progress{
-    padding-right: 0px;
-    color: white;
-  }
-  .mh-professional-progress h3{
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: #6ECCAF;  
-    margin-bottom: 50px;;
-    }
-  .mh-professional-progress li{
+.mh-professional-progress {
+  padding-right: 0px;
+  color: white;
+}
+.mh-professional-progress h3 {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #6eccaf;
+  margin-bottom: 50px;
+}
+.mh-professional-progress li {
   display: inline-block;
   margin: 0 auto;
   float: none;
   width: 48%;
   margin-bottom: 30px;
   text-align: center;
-  }
-.mh-progress{
-margin-bottom: 10px;
-font: 900 1.4285/1;
-color: white;
 }
-.mh-progress .progressbar-text{
+.mh-progress {
+  margin-bottom: 10px;
+  font: 900 1.4285/1;
+  color: white;
+}
+.mh-progress .progressbar-text {
   color: white !important;
 }
-.progress.progress-line{
+.progress.progress-line {
   height: 10px;
-  margin-right:60px ; 
+  margin-right: 60px;
 }
-.progress.progress-line .progressbar-text{
+.progress.progress-line .progressbar-text {
   position: absolute;
   top: 50%;
-  left:100%;
+  left: 100%;
   width: 60px;
   text-align: center;
   transform: translateY(-35);
-
 }
-.mh-progress.mh-progress-circle{
-  display:  inline-block;
+.mh-progress.mh-progress-circle {
+  display: inline-block;
   width: 100px;
   height: 100px;
 }
-.mh-progress path:nth-child(1){
+.mh-progress path:nth-child(1) {
   stroke: #3c3939;
 }
-.mh-progress path:nth-child(2){
-  stroke: #6ECCAF;
+.mh-progress path:nth-child(2) {
+  stroke: #6eccaf;
 }
 
 /* ---------Contact--------- */
 
-.contact-left{
-flex-basis: 35%;
+.contact-left {
+  flex-basis: 35%;
 }
-.contact-right{
+.contact-right {
   flex-basis: 65%;
 }
-.contact-left p{
+.contact-left p {
   color: white;
-  margin-top: 30px ;
+  margin-top: 30px;
 }
-.contact-left p i{
-  color: #6ECCAF;
+.contact-left p i {
+  color: #6eccaf;
   margin-right: 15px;
   font-size: 20px;
 }
 
-.social-icons{
-  margin-top:30px;
+.social-icons {
+  margin-top: 30px;
 }
 
-.social-icons a{
+.social-icons a {
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
@@ -397,58 +389,58 @@ flex-basis: 35%;
   transition: transform 0.5s;
 }
 
-.social-icons a:hover{
-  color: #6ECCAF;
+.social-icons a:hover {
+  color: #6eccaf;
   transform: translateY(-5px);
 }
 
-.contact-right form{
-width: 100%;
+.contact-right form {
+  width: 100%;
 }
-form input, form textarea{
-width: 100%;
-background: #3c3939;
-border: 0;
-outline: none;
-padding: 15px;
-margin: 15px 0;
-color:white;
-font-size: 18px;
-border-radius: 6px;
-font-family:'Montserrat Alternates', sans-serif;
+form input,
+form textarea {
+  width: 100%;
+  background: #3c3939;
+  border: 0;
+  outline: none;
+  padding: 15px;
+  margin: 15px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  font-family: "Montserrat Alternates", sans-serif;
 }
-form .btn-2{
+form .btn-2 {
   padding: 14px 60px;
   font-size: 20px;
   cursor: pointer;
   margin: 20px auto;
-  background-color: #6ECCAF;
-  display:inline-block;
+  background-color: #6eccaf;
+  display: inline-block;
   font-size: 18px;
-  color:white;  
+  color: white;
   transition: background 0.5s;
-  font-family:'Montserrat Alternates', sans-serif;
-
+  font-family: "Montserrat Alternates", sans-serif;
 }
-.btn{
+.btn {
   display: block;
   margin: 50px auto;
-  width:fit-content;
-  border: 1px solid #6ECCAF;
+  width: fit-content;
+  border: 1px solid #6eccaf;
   border-radius: 6px;
   padding: 14px 50px;
   text-decoration: none;
   color: white;
   transition: background 0.5s;
 }
-.btn:hover{
- background: #6ECCAF;
+.btn:hover {
+  background: #6eccaf;
 }
-.btn-2:hover{
-  background:#3c3939;
+.btn-2:hover {
+  background: #3c3939;
 }
 
-.copyright{
+.copyright {
   width: 100%;
   text-align: center;
   padding: 25px 0;
@@ -456,43 +448,43 @@ form .btn-2{
   background: #3c3939;
   margin-top: 20px;
 }
-.copyright a{
-  color: #6ECCAF;
+.copyright a {
+  color: #6eccaf;
   text-decoration: none;
 }
-#msg{
-  color: #6ECCAF;
+#msg {
+  color: #6eccaf;
   margin-top: -40px;
   display: block;
 }
 
 /* -------Responsiveness--------- */
 /* ////........Media Query........//// */
-#msg{
+#msg {
   margin-top: 15px;
 }
-nav .fa-solid{
+nav .fa-solid {
   display: none;
 }
 
 @media (max-width: 600px) {
-  .section{
+  .section {
     flex-direction: row-reverse;
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     /* flex-direction: column-reverse; */
   }
-  .row{
+  .row {
     margin-block: -70%;
     display: block;
   }
-  .section .header-text{
+  .section .header-text {
     flex-basis: 30%;
     margin-top: 10%;
-    font-size:15px ;
+    font-size: 15px;
     /* padding-block: 30%; ; */
   }
-  .section .header-image{
+  .section .header-image {
     margin-right: -20%;
     width: 95%;
     display: flex;
@@ -500,39 +492,38 @@ nav .fa-solid{
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .header-text h1{
+  .header-text h1 {
     font-size: 30px;
   }
-  .btn.btn-1{
-
+  .btn.btn-1 {
   }
-  #about{
+  #about {
     margin-top: -50%;
   }
-  .about-col-2{
+  .about-col-2 {
     display: contents;
   }
-  .about-col-1 img{
+  .about-col-1 img {
     display: none;
     /* width: 27%; */
     /* position: absolute; */
     /* left: 250px; */
   }
-  
-  .skills{
-      width: 80%;
+
+  .skills {
+    width: 80%;
   }
 
-  .skills-bar .bar .progress-line{
-      width: 100%;
+  .skills-bar .bar .progress-line {
+    width: 100%;
   }
-  nav .fa-solid{
+  nav .fa-solid {
     display: block;
     color: white;
     font-size: 25px;
   }
-  nav ul{
-    background:#3c3939;
+  nav ul {
+    background: #3c3939;
     position: fixed;
     top: 0;
     right: -200px;
@@ -542,33 +533,32 @@ nav .fa-solid{
     z-index: 2;
     transition: right 0.5s;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 25px;
   }
-  nav ul .fa-solid{
+  nav ul .fa-solid {
     position: absolute;
-    left:25px;
+    left: 25px;
     top: 25px;
-    corsor:pointer;
+    corsor: pointer;
   }
 
-  #services{
+  #services {
     margin-block: 40%;
   }
-.mh-professional-skills{
-margin-block: 40px;
-margin-bottom: 150%;
+  .mh-professional-skills {
+    margin-block: 40px;
+    margin-bottom: 150%;
+  }
+  .pr-skill-name {
+    font-size: 13px;
+  }
+  .social-icons .fa-brands,
+  .fab {
+    width: 25px;
+  }
+  .copyright {
+    margin-top: 300px;
+  }
 }
-.pr-skill-name{
-  font-size: 13px;
-}
-.social-icons .fa-brands, .fab{
-  width: 25px;
-}
-.copyright{
-  margin-top:300px ;
-}
-}
-
-
