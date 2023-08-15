@@ -5,9 +5,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
-  font-family: "Montserrat Alternates", sans-serif;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-color: black !important;
+  font-family: "Montserrat Alternates", sans-serif !important;
 }
 html {
   scroll-behavior: smooth;
@@ -55,8 +54,15 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+/********* Header Section **********/
+.section {
+  display: flex;
+  justify-content: space-between;
+}
 .header-text {
   margin-top: 5%;
+  justify-content: left !important;
+  flex-basis: 50%;
 }
 .header-text p {
   color: white;
@@ -73,17 +79,20 @@ nav ul li a:hover::after {
 }
 .header-text span {
   color: #6eccaf;
+  justify-content: left;
 }
 .header-image {
-  display: flex;
-  justify-content: right;
-  flex-wrap: wrap;
+  margin-top: 5%;
+  justify-content: right !important;
+  flex-basis: 50%;
 }
-.section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.header-image img {
+  width: 100%;
+  border-radius: 10%;
+  display: block;
+  transition: transform 0.5s;
 }
+
 .btn-1 {
   display: inline-block;
   font-size: 18px;
@@ -458,19 +467,96 @@ form .btn-2 {
   display: block;
 }
 
-/* -------Responsiveness--------- */
-/* ////........Media Query........//// */
 #msg {
   margin-top: 15px;
 }
 nav .fa-solid {
   display: none;
 }
+/************************* PORTFOLIO SECTION ******************/
+#portfolio {
+  padding: 50px, 0;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-bottom: 50px;
+}
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10%;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #6eccaf);
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0, 40px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.layer ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.layer .ext-links li {
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 50px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+}
+.layer .ext-links li a {
+  color: #3c3939;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+/* -------Responsiveness--------- */
+/* ////........Media Query........//// */
 
 @media (max-width: 600px) {
   .section {
-    flex-direction: row-reverse;
-    display: flex;
     flex-wrap: nowrap;
     /* flex-direction: column-reverse; */
   }
@@ -485,21 +571,14 @@ nav .fa-solid {
     /* padding-block: 30%; ; */
   }
   .section .header-image {
-    margin-right: -20%;
-    width: 95%;
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display: none;
   }
   .header-text h1 {
     font-size: 30px;
   }
   .btn.btn-1 {
   }
-  #about {
-    margin-top: -50%;
-  }
+
   .about-col-2 {
     display: contents;
   }
@@ -549,7 +628,8 @@ nav .fa-solid {
   }
   .mh-professional-skills {
     margin-block: 40px;
-    margin-bottom: 150%;
+  }
+  .skills-col-2 {
   }
   .pr-skill-name {
     font-size: 13px;
@@ -560,5 +640,23 @@ nav .fa-solid {
   }
   .copyright {
     margin-top: 300px;
+  }
+  #portfolio {
+    margin: 10%;
+    margin-block: 50%;
+    padding-bottom: 20%;
+  }
+
+  .layer h3 {
+    font-size: 20px;
+  }
+  .layer .ext-links a {
+    font-size: 18px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .layer p {
+    font-size: 15px;
   }
 }
